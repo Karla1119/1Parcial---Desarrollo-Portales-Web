@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tablas en HTML</title>
+        <meta charset="utf-8"> 
+    </head>
+    <body>
+        <h1>Tablas</h1> 
+        <table border="1"> <!--"border" aplica estructura a la tabla-->
+
+            <!--Encabezado-->
+            <thead> 
+                <tr>
+                    <th colspan="5">Número de Ventas por Cuarto del Año</th>
+                </tr>
+                <tr> <!--Define la línea de la tabla-->
+                    <th>Zona</th>
+                    <th> Ciudad</th> <!--Establece el data de tipo encabezado-->
+                    <th>Q1</th>
+                    <th>Q2</th>
+                    <th>Q3</th>
+                </tr>
+             </thead>
+
+             <!--Cuerpo-->
+             <tbody>
+                <tr>
+                    <td rowspan="2">Centro Sur</td> <!--Se expande de forma vertical-->
+                    <td>Tegucigalpa</td> <!--"td" establece los datos-->
+                    <td>13</td>
+                    <td>15</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>Choluteca</td> 
+                    <td>8</td>
+                    <td colspan="2">10</td> <!--Se expande de forma horizontal-->
+                </tr>
+                <tr>
+                    <td rowspan="2">Nor Occidente</td>
+                    <td>La Ceiba</td>
+                    <td>18</td>
+                    <td>10</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>San Pedro Sula</td> 
+                    <td>18</td>
+                    <td>20</td>
+                    <td>22</td>
+                </tr>
+             </tbody>
+
+             <!--Pie de página-->
+             <tfoot>
+                <tr>
+                    <td colspan="2"></td>
+                    <td>57</td>
+                    <td>65</td>
+                    <td>47</td>
+                </tr>
+             </tfoot>
+
+        </table>
+
+    </body>
+</html>
