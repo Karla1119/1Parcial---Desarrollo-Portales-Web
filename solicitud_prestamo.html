@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"> 
+        <meta content="width=device-width, initial-scale=1" name="viewport">
+        <title>Formulario Solicitud de Préstamos Estudiantiles</title>
+    </head>
+    <body>
+       <h1>Solicitud de Préstamo Estudiantil</h1>
+       <h2>Formulario de Aplicación</h2>
+       <p>Por favor, proporcione la información solicitada a continuación.</p>
+
+       <form action="solicitud_prestamo.html" method="get">
+            <h3>Información Personal</h3>
+            <label for="txtNombre">Nombre Completo:</label>
+            <input id="txtNombre" name="txtNombre" type="text" placeholder="Nombre Completo"/> <!--Placeholder crea la caja de texto-->
+            <br/><br/>
+
+            <label for="txtEmail">Dirección de Correo Electrónico:</label>
+            <input id="txtEmail" name="txtEmail" type="email" placeholder="tucorreo@lectron.ico"/> 
+            <br/><br/>
+
+            <label for="txtTelefono">Número de Teléfono:</label>
+            <input id="txtTelefono" name="txtTelefono" type="text" placeholder="+504"/> 
+            <br/><br/>
+
+            <label for="txtDireccion">Dirección Actual:</label>
+            <input id="txtDireccion" name="txtDireccion" type="text" placeholder="Colonia/Barrio"/> 
+            <br/><br/>
+
+            <label for="txtCiudad">Ciudad:</label>
+            <input id="txtCiudad" name="txtCiudad" type="text" placeholder="Escribe tu ciudad"/> 
+            <br/><br/>
+
+            <label for="cmbDepartamento">Estado:</label>
+            <select id="cmbDepartamento" name="cmbDepartamento">
+                <option value="ATL" selected>Atlántida</option>
+                <option value="CHL">Choluteca</option>
+                <option value="CMYG">Comayagua</option>
+                <option value="CRT">Cortés</option>
+                <option value="FRM">Francisco Morazán</option>
+                <option value="OC">Olancho</option>
+                <option value="Otro">Otro</option>
+            </select><br/><br/>
+
+            <label for="txtPostal">Código Postal:</label>
+            <input id="txtPostal" name="txtPostal" type="text" placeholder="2 letras y 4 dígitos"/> 
+            <br/>
+
+            <h3>Información Académica</h3>
+            <label>Nivel de educación actual: </label><br/>
+            <label for="optPrep">Preparatoria</label>
+            <input type="radio" id="optPrep" name="optNivelEdu" value="PREP" checked/> <!--"name" todas deben ser la misma variable-->
+                &nbsp;
+            <label for="optLic">Licenciatura</label>
+            <input type="radio" id="optLic" name="optNivelEdu" value="LIC"/>
+                &nbsp;
+            <label for="optMaes">Maestría</label>
+            <input type="radio" id="optMaes" name="optNivelEdu" value="MAES"/> 
+                &nbsp; 
+            <label for="optDoc">Doctorado</label>
+            <input type="radio" id="optDoc" name="optNivelEdu" value="DOC"/>
+                &nbsp;
+            <br/><br/>
+
+            <label>Programa de estudio: </label><br/>
+            <label for="optCC">Ciencias de la Computación</label>
+            <input type="radio" id="optCC" name="optProgEstudio" value="CC" checked/>
+                &nbsp;
+            <label for="optING">Ingeniería</label>
+            <input type="radio" id="optING" name="optProgEstudio" value="ING"/>
+                &nbsp;
+            <label for="optECO">Economía</label>
+            <input type="radio" id="optECO" name="optProgEstudio" value="ECO"/> 
+                &nbsp; 
+            <label for="optARTES">Artes</label>
+            <input type="radio" id="optARTES" name="optProgEstudio" value="ARTES"/>
+                &nbsp;
+            <label for="optOTRO">Otro</label>
+            <input type="radio" id="optOTRO" name="optProgEstudio" value="OTRO"/>
+                &nbsp;
+            <br/>
+
+            <H3>Detalles del Préstamo</H3>
+            <label for="txtMonto">Monto del préstamo solicitado: </label>
+            <input id="txtMonto" name="txtMonto" type="text" placeholder="Cantidad Lps."/>
+            <br/><br/>
+
+            <label for="txtRazonPre">Razón para solicitar el préstamo: </label><br/>
+            <textarea id="txtRazonPre" name="txtSolicitud" placeholder="Solicitud Detallada"></textarea> <!--La etiqueta de cierre y apertura de textarea debe ir pegada-->
+            <br/><br/>
+            <button type="submit" name="btnEnviar">Enviar</button>
+       </form>
+    </body>
+</html>
