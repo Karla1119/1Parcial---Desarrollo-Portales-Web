@@ -1,0 +1,167 @@
+/*Selectores de etiqueta*/
+/*Con el "*" realiza cambio a todo */
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: white;
+    color: black; 
+    margin: 0px;
+    padding: 0px;
+} 
+
+
+header{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+header img{
+    margin: 0.5px;
+    margin-left: 1rem;
+}
+
+header h1{
+    margin: 0px;
+    margin-left: 10rem;
+    font-size: 3rem;
+    color: rgba(212, 194, 25, 0.96);
+}
+
+main{
+    background-color:rgba(255, 0, 0, 0.675);
+    color:black;
+    padding: 0;
+}
+
+main h2{
+    margin: 0.2rem;
+}
+
+header nav ul{
+    display: flex; 
+    list-style: none;
+    margin: 0px;
+    margin-right: 1rem;
+}
+
+header nav ul li a{
+    display: block;
+    padding: 1rem 1rem;
+    text-decoration: none;
+    color: black;
+    transition: background-color 1s ease;
+}
+
+header nav ul li a:hover{
+    background-color: rgba(255, 5, 5, 0.747);
+    color: whitesmoke
+}
+
+/*Hace referencia al clasificador con el (.)*/
+/*1 valor: Equivale al valor de todo, 2: Equivale a horizontal y vertical*/
+.hero-panel{
+    position: relative;
+    overflow: hidden;
+    background-color: black;
+    height: 90vh;
+}
+
+.hero-panel img{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+.hero-panel div{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 1rem;
+    border-radius: 17px;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.hero-panel div a{
+    align-self: center;
+    display: inline-block;
+    padding: 1rem 2rem;
+    border: 1px solid #043c79;
+    background-color: #1670d0;
+    color: #fff;
+    text-decoration: none;
+    margin: 0.5rem auto;
+    box-shadow: 3px 3px 5px black;
+    border-radius: 48px;
+}
+
+
+.hero-panel div.cuadrante2{
+    top: 87%;
+    left: 11%;
+}
+
+.precios-panel{
+    padding: 2rem;
+    background-color: #fff;
+    text-align: center;
+}
+
+.panels{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+
+.panels div.panel {
+    background-color: #f7f7f7;
+    color: black;
+    width: 300px;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.panels div.panel img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.precios-panel div a{
+    align-self: center;
+    display: inline-block;
+    padding: 1rem 2rem;
+    border: 1px solid #570000;
+    background-color: #930101;
+    color: #fff;
+    text-decoration: none;
+    margin: 0.5rem auto;
+    box-shadow: 3px 3px 5px black;
+    border-radius: 48px;
+}
+
+aside{
+    padding: 1rem;
+    background-color: #c50606;
+    color: whitesmoke;
+}
+
+aside h3{
+    text-align: center;
+}
+
+footer{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
