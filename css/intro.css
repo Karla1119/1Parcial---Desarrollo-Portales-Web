@@ -1,11 +1,14 @@
 /*Selectores de etiqueta*/
-/*Con el "*" realiza cambio a todo */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
 *{
-    box-sizing: border-box;
+    box-sizing: border-box;    /*Con el "*" realiza cambio a todo */
 }
 
 /*PARA MÓVIL*/
 body {
+    font-family: 'Montserrat', Arial, sans-serif;
     background-color: #000;
     color:#fff;
     margin:0px;
@@ -13,9 +16,13 @@ body {
 }
 
 header {
+    position: sticky;
+    top: 0px;
+    left: 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    z-index: 900;
 }
 
 header h1 {
@@ -215,6 +222,78 @@ main h2 {
         background-color: #651900;
     }
 }
+
+.full-progress{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress, .progress2, .progress3{
+    width: 40px;
+    height: 195px;
+    position: absolute;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.53);
+}
+
+.progress{
+    border: solid 5px #ffffff;
+    border-bottom: dotted 16px #ff0000;
+    animation: rotar 5s infinite linear;
+    animation-delay: 5s;
+    animation-direction: alternate;
+}
+
+.progress2{
+    border: solid 5px #ffffff;
+    border-bottom: dotted 16px #e32323;
+    animation: rotar 3s infinite linear;
+    animation-direction: reverse;
+    animation-delay: 1s;
+}
+
+.progress3{
+    border: solid 5px #ffffff;
+    border-bottom: dotted 16px #e32323;
+    border-radius: 50%;
+    animation: rotar 4.5s infinite linear;
+    animation-direction: alternate;
+    animation-delay: 0.5s;
+}
+
+.progress4{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #ff7f50;
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px rgba(255, 127, 80, 0.7);
+    z-index: 1001;
+}
+
+
+/*Realizar la animación del progress*/
+@keyframes rotar{ /*Realizando la rotación */
+    0%{
+        transform: rotate(0deg);
+    }
+    /*50%{
+        transform: rotate(180deg);
+    }*/
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
 
 /*VH= Viewport high*/
  /*En la web las distancias (unidades de medida) son relativas(porcentaje, 
